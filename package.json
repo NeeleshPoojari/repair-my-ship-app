@@ -1,0 +1,16 @@
+{
+  "name": "repair-my-ship-app",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "start:server": "npm start --prefix server",
+    "start:client": "npm start --prefix client",
+    "start": "concurrently \"npm run start:server\" \"npm run start:client\""
+  },
+  "repository": "https://github.com/NeeleshPoojari/repair-my-ship-app.git",
+  "author": "neepooja <neepooja@publicisgroupe.net>",
+  "license": "MIT",
+  "dependencies": {
+    "concurrently": "^5.1.0"
+  }
+}
